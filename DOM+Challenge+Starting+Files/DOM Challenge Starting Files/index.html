@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <h1>Hello</h1>
+    <a href="https:/google" target="_blank">Google</a>
+    <input type="checkbox">
+
+    <button style=":active color:red;">Click Me</button>
+
+    <ul>
+      <li class="list">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li>
+    </ul>
+    <script>
+      list3 = document.getElementsByTagName("li")[2]
+      list3.innerHTML = "vivian"
+      console.log(list3)
+      google_color = document.querySelector("ul li a") // this or the method below will still work
+      // google_color = document.querySelector("li.list a")
+      google_color.style.color = "red"
+      console.log(google_color)
+      btn_bg_color =document.querySelector("button")
+      btn_bg_color.style.backgroundColor = "yellow"
+      console.log(btn_bg_color)
+      huge_h1 = document.querySelector("h1")
+      huge_h1.classList.add("huge")
+    </script>
+  </body>
+
+</html>

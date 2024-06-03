@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <form class="set">
+        <div class="display">
+            <input type="text" name="text" name="display" id="calc" placeholder="0" value="">
+        </div>
+        
+        <div class="butt">
+            <button value="AC" class = "clear">AC</button>
+            <button value="DEL" class = "Delete">DEL</button>
+            <button value="." class = "point">.</button>
+            <button value="1" class = "one">1</button>
+            <button value="2" class = "two">2</button>
+            <button value="3" class = "three">3</button>
+            <button value="4" class = "four">4</button>
+            <button value="5" class = "five">5</button>
+            <button value="6" class = "six">6</button>
+            <button value="7" class = "seven">7</button>
+            <button value="8" class = "eight">8</button>
+            <button value="9" class = "nine">9</button>
+            <button value="0" class = "zero">0</button>
+            <button value="." class = "point">.</button>
+            <button value="!" class = "factorial">!</button>
+            <button value="+" class = "addaition">+</button>
+            <button value="*" class = "multiplication">*</button>
+            <button value="-" class = "subtraction">-</button>
+            <button value="/" class = "division">/</button>
+            <button value="%" class = "modulus">%</button>
+            <button value="^" class = "exponential">^</button>
+            
+        </div>
+        <div>
+            <button class="equals">=</button>
+        </div>
+    </form>
+    <script>
+        document.querySelector("div.butt").addEventListener("click",displayValue)
+        function displayValue(e){
+            alert("yo!")
+            input = document.querySelector("div.display")
+            input.innerHTML = e.target.value
+            console.log(e.target.value)
+
+        }
+    </script>
+</body>

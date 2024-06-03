@@ -1,0 +1,99 @@
+body{
+    text-align: center;
+    background-color: gray;
+}
+.set{
+    margin: 10% auto;
+    border: 4px solid ghostwhite;
+    border-radius: 15px;
+    width: 290px;
+    display: inline-block;
+    background-color: black;
+    padding: 40px;
+}
+div{
+    padding: 2%;
+}
+.butt{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 17px;
+    font-size: 90px;
+    font-weight: bold;
+}
+  /* #calc{
+    text-align: right;
+    color: black;
+    background: white;
+    width: 150px;
+    margin-left: 70px;
+    justify-content: end;
+    height: 10px;
+    margin-bottom: 15px;
+} */
+#calc{
+    background-color: gray;
+    color: black;
+    font: bold;
+
+}
+
+.one{
+    cursor: pointer;
+}
+.two{
+    cursor: pointer;
+}
+.three{
+    cursor: pointer;
+}
+.four{
+    cursor: pointer;
+}
+.five{
+    cursor: pointer;
+}
+.six{
+    cursor: pointer;
+}
+.seven{
+    cursor: pointer;
+}
+.eight{
+    cursor: pointer;
+}
+.nine{
+    cursor: pointer;
+}
+.zero{
+    cursor: pointer;
+}
+.addition{
+    cursor: pointer;
+}
+.subtraction{
+    cursor: pointer;
+}
+.multiplication{
+    cursor: pointer;
+}
+.division{
+    cursor: pointer;
+}
+.exponential{
+    cursor: pointer;
+}
+.modulus{
+    cursor: pointer;
+}
+.equals{
+    color: brown;
+}
+.operators{
+    background:red;
+    color: whitesmoke;
+}
+.others{
+    background:red;
+    color: wheat;
+}

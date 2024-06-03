@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <div class="set">
+        <div id="calc">
+           <input type="text" name="text" name="display" id="calc" placeholder="0" > 
+        </div>
+        
+        <div class="butt">
+            <button id="one" value="1" class = "one" onclick="apendNumber(1)">1</button>
+            <button id="two" value="2" class = "two" onclick="apendNumber(2)">2</button>
+            <button id="three" value="3" class = "three" onclick="apendNumber(3)">3</button>
+            <button id="four" value="4" class = "four" onclick="apendNumber(4)">4</button>
+            <button id="five" value="5" class = "five" onclick="apendNumber(5)">5</button>
+            <button id="six" value="6" class = "six" onclick="apendNumber(6)">6</button>
+            <button id="seven" value="7" class = "seven" onclick="apendNumber(7)">7</button>
+            <button id="eight" value="8" class = "eight" onclick="apendNumber(8)">8</button>
+            <button id="nine" value="9" class = "nine" onclick="apendNumber(9)">9</button>
+            <button id="zero" value="0" class = "zero" onclick="apendNumber(0)">0</button>
+            <button id="point" value="." class = "point" onclick="decimal()">.</button>
+            <button id="factorial" value="!" class = "factorial operators" onclick="apendOperator('!')">!</button>
+            <button id="factorial" value="+" class = "addaition operators" onclick="apendOperator('+')">+</button>
+            <button id="multiplication" value="*" class = "multiplication operators" onclick="apendOperator('*')">*</button>
+            <button id="subtraction" value="-" class = "subtraction operators" onclick="apendOperator('-')">-</button>
+            <button id="display" value="/" class = "division operators" onclick="apendOperator('/')">/</button>
+            <button id="modulus" value="%" class = "modulus operators" onclick="apendOperator('%')">%</button>
+            <button id="exponential" value="^" class = "exponential operators" onclick="apendOperator('^')">^</button>
+            <button id="AC"  value="AC" class = "clear others" onclick="clearDisplay()">AC</button>
+            <button id="DEL" value="DEL" class = "Delete others" onclick="removeLastValue()">DEL</button>
+            <button id="equals" class="equals others" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script>
+        // alert('working')
+        let display = document.getElementById('calc');
+        console.log(display.textContent)
+        let currentInput = '';
+        let operator = '';
+        let previousInput = '';
+        let shouldResetScreen = false;
+
+        function clearDisplay(){
+            display.textContent = 0;
+            currentInput = '';
+            operator = '';
+            previousInput = '';
+        }
+        function resetScreen(){
+            display.textContent = '';
+            shouldResetScreen = false
+        }
+        function apendNumber(number){
+            // alert("clik")
+            console.log("append 1")
+            if (shouldResetScreen){
+                resetScreen();
+            }if (display.textContent === 0){
+                display.textContent = number
+            }else {
+                display.textContent += number
+            }
+            console.log("append 5")
+            currentInput = display.textContent
+        }
+        function removeLastValue(){
+            display.textContent -= currentInput
+             alert("done")
+        }
+        fu
+    </script>
+</body>
+</html>
